@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign in</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<header th:insert="blocks/header.html :: header"></header>
+
+<div id="options" class="container mt-5">
+    <h1>Enter your credentials</h1>
+    <div id="insider">
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="Type username..."><br>
+            <input type="text" name="password" placeholder="Type password...">
+            <button type="submit" class="btn btn-success">Sign in</button><br>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

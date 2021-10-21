@@ -1,0 +1,106 @@
+<div th:fragment="header">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
+
+    <div id="navbar">
+        <ul>
+            <li><a href="/profile">My Page</a></li>
+            <li><a href="/msg">Messages</a></li>
+            <li id="about"><a href="/about">About</a></li>
+        </ul>
+    </div>
+
+    <style>
+
+        html{
+
+            font-family: 'Abel', sans-serif;
+
+        }
+
+        #navbar{
+            margin: 0 0;
+            background-color: #232c4d;
+            border: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        #fronts{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+            min-width: 150px;
+            border-right: 1px white solid;
+        }
+
+        li a:hover{
+            background-color: darkblue;
+        }
+
+        li a:visited{
+            text-decoration: none;
+        }
+
+        #options{
+            margin-right: 30%;
+            margin-left: 30%;
+            margin-top: 10%;
+            border: black solid;
+            text-align: center;
+        }
+
+        #insider{
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        button{
+            background-color: #232c4d;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            min-width: 50%;
+        }
+
+        input{
+            min-width: 50%;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #about{
+            float: right;
+            border-left: 1px white solid;
+        }
+
+    </style>
+
+</div>
